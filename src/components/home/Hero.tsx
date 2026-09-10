@@ -6,17 +6,16 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-[82vh] sm:min-h-[85vh] lg:h-screen lg:min-h-[100dvh] w-full overflow-hidden bg-[#FAF9F6] border-b border-zinc-200/60 flex flex-col justify-between">
 
       {/* =====================================================
-          SOFT AMBIENT BACKGROUND GLOW (BEHIND PNG PRODUCT)
+          SOFT AMBIENT BACKGROUND GLOW (100% SEAMLESS BLEND - NO HARD CIRCLE)
       ====================================================== */}
       <div
         className="
           absolute
-          right-[5%] lg:right-[8%]
-          bottom-[2%] lg:bottom-[4%]
-          w-[320px] sm:w-[460px] lg:w-[560px]
-          h-[320px] sm:h-[460px] lg:h-[560px]
-          rounded-full
-          bg-[radial-gradient(circle,rgba(245,230,210,0.45)_0%,rgba(250,249,246,0)_70%)]
+          right-0
+          bottom-0
+          w-[60%]
+          h-full
+          bg-[radial-gradient(circle_at_75%_70%,rgba(245,230,210,0.35)_0%,rgba(250,249,246,0)_70%)]
           pointer-events-none
           z-0
         "
@@ -25,7 +24,7 @@ export const Hero: React.FC = () => {
       {/* =====================================================
           DESKTOP RIGHT SIDE TRANSPARENT PRODUCT PNG IMAGE (SCALED DOWN SLIGHTLY - 20px REDUCED)
       ====================================================== */}
-      <div className="hidden lg:flex absolute right-0 bottom-0 top-[152px] lg:top-[152px] xl:top-[136px] w-[50%] xl:w-[54%] items-end justify-end pr-4 xl:pr-8 pointer-events-none z-10">
+      <div className="hidden lg:flex absolute right-0 bottom-0 top-[144px] lg:top-[144px] xl:top-[128px] w-[50%] xl:w-[54%] items-end justify-end pr-4 xl:pr-8 pointer-events-none z-10">
         <img
           src="/images/hero-object.png"
           alt="M Store iPhone 16 Pro"
@@ -34,7 +33,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* =====================================================
-          HERO CONTENT CONTAINER (ADDITIONAL 20px GAP BELOW NAVBAR)
+          HERO CONTENT CONTAINER (REDUCED 8px GAP BELOW NAVBAR)
       ====================================================== */}
       <div
         className="
@@ -43,7 +42,7 @@ export const Hero: React.FC = () => {
           w-full max-w-[1800px]
           items-center justify-between
           px-5 sm:px-[6.5vw]
-          pt-[136px] sm:pt-[152px] lg:pt-[136px]
+          pt-[128px] sm:pt-[144px] lg:pt-[128px]
           pb-2 lg:pb-4
         "
       >
@@ -87,9 +86,9 @@ export const Hero: React.FC = () => {
               leading-[1.0] sm:leading-[0.98]
               tracking-tight
               text-zinc-950
-              sm:text-[61px]
-              lg:text-[74px]
-              xl:text-[84px]
+              sm:text-[54px]
+              lg:text-[62px]
+              xl:text-[70px]
               animate-hero-text-smooth apple-delay-150
             "
           >

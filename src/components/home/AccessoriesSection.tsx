@@ -76,7 +76,7 @@ export const AccessoriesSection: React.FC = () => {
   };
 
   return (
-    <section ref={ref} className="py-10 sm:py-14 bg-white border-b border-zinc-200/60">
+    <section ref={ref} className="py-9 sm:py-12 lg:py-11 bg-white border-b border-zinc-200/60">
       <div className={`max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 space-y-7 reveal-hidden ${isVisible ? 'reveal-visible' : ''}`}>
         
         {/* Section Header */}
@@ -85,7 +85,7 @@ export const AccessoriesSection: React.FC = () => {
             <span className="text-[11px] font-semibold text-[#E50914] uppercase tracking-[0.2em] block">
               APPLE ESSENTIALS
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-zinc-950 tracking-tight">
+            <h2 className="font-ds-quilter text-3xl sm:text-4xl font-bold text-zinc-950 tracking-tight">
               Complete Your Setup.
             </h2>
             <p className="text-xs sm:text-sm text-zinc-600 font-normal leading-relaxed max-w-lg">
