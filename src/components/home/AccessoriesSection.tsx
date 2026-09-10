@@ -69,8 +69,9 @@ export const AccessoriesSection: React.FC = () => {
   ];
 
   const getWhatsAppUrl = (item: AccessoryItem) => {
+    const imageUrl = item.image.startsWith('http') ? item.image : `${window.location.origin}${item.image}`;
     const text = encodeURIComponent(
-      `Hi M STORE, I am interested in buying ${item.name} (${formatCurrency(item.price)}). Please provide more details.`
+      `Hi M STORE, I am interested in buying ${item.name} (${formatCurrency(item.price)}).\nImage: ${imageUrl}\nPlease provide more details.`
     );
     return `https://wa.me/${BRAND_CONFIG.whatsappNumberClean}?text=${text}`;
   };
